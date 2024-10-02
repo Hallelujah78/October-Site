@@ -23,6 +23,8 @@ li {
 .section-center {
     max-width: 80vw;
     margin: auto;
+    border: red solid 1px;
+
 }
 
 nav {
@@ -32,6 +34,60 @@ nav {
 }
 
 .nav-center {
-    width: 80vw;
+    width: 50vw;
+    margin: auto;
+}
 
+/* img {
+    margin-top: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+} */
+
+#img1,
+#img2 {
+    max-width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+#img3 {
+    margin: auto;
+}
+
+footer {
+    height: 5rem;
+    border-top: gray 1px solid;
+    width: 100%;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.img-container {
+    display: grid;
+    grid-template-areas:
+        'myArea1 myArea2'
+        'myArea3';
+}
+
+.img-container-1 {
+    grid-area: area1;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    border: red solid 1px;
+}
+
+.img-container-2 {
+    grid-area: area2;
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    border: red solid 1px;
+}
+
+.img-container-2 {
+    grid-area: area3;
 }
