@@ -1,4 +1,14 @@
 a {
     text-decoration: none;
+    color: rgb(46, 45, 45);
+    text-transform: uppercase;
+}
 
+li {
+    display: inline-block;
+}
+
+.section-center {
+    max-width: 80vw;
+    margin: auto;
 }
