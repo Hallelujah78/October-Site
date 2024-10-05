@@ -113,12 +113,17 @@ span.comment {
 
 
 p {
-    /* font-size: 1.5rem; */
     font-size: 1.5rem;
+    margin: 1rem;
 }
 
 article {
     border: red solid 1px;
     width: 100%;
     height: fit-content;
+    font-size: 20rem;
+}
+
+article p {
+    font-size: 6%;
 }
