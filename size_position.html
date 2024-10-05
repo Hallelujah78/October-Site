@@ -87,6 +87,23 @@ height: 100vh;  <span class="comment">// the div is 100% of the view height</spa
         </div>
     </section>
     <script type="module" src="script.js"></script>
+    <div>
+        <article class="relative-article">
+            <p>This red div is positioned relative (<code>position: relative</code>) to its blue article parent.</p>
+            <div class="relative-div"></div>
+            <p>The red div is positioned over this paragraph. Note the gap between the two paragraphs: the red div is
+                treated as if it were at its default position in the html.</p>
+        </article>
+    </div>
+    <div>
+        <article class="absolute-article">
+            <p>This orange div is positioned absolutely (<code>position: absolute</code>) to the <code>html</code> tag.
+            </p>
+            <div class="absolute-div"></div>
+            <p>The orange div has no non-static ancestor elements, and so to make it appear in its displayed position we
+                use <code>top: 250vh</code> and <code>left: 50vw</code></p>
+        </article>
+    </div>
 </body>
 
 </html>
