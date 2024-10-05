@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS size and position</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <ul>
+
+                <li>
+                    <a href="kooky.html">Kooky</a>
+
+                </li>
+                <li>
+                    <a href="spooky.html">Spooky</a>
+
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+
+                </li>
+                <li>
+                    <a href="size_position.html">CSS</a>
+
+                </li>
+                <li>
+                    <a href="index.html#img3">Image 3</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="css-section-center">
+            <p>This paragraph is inside a <code>div</code>. The <code>div</code> is inside a <code>section</code> which
+                in turn is nested inside the
+                <code>body</code>.
+                The <code>div</code> has the following CSS:
+            </p>
+
+
+            <code class="block">
+<span class="comment">// the div inside the section</span><br>
+margin: auto;   <span class="comment">// center the div horizontally</span>
+width: 80vw;    <span class="comment">// the div's width is 80% of the view width</span>    
+height: 100vh;  <span class="comment">// the div is 100% of the view height</span></code>
+            <p>Note that because the <code>nav</code> has a height of 5rem and the <b>div</b> inside the section has a
+                height of 100vh, the total height of our page is 100vh + 5rem, and so we have a vertical scrollbar on
+                the right. The section has no height set, and so it will stretch to whatever height is required by the
+                div.</p>
+        </div>
+        <article>
+            <p>This paragraph is inside an <code>article</code>.</p>
+        </article>
+    </section>
+
+</body>
+
+</html>

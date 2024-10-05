@@ -80,3 +80,45 @@ section {
     width: 49%;
     display: inline-block;
 }
+
+/* CSS page styles */
+.css-section-center {
+    border: green 1px solid;
+    margin: auto;
+    width: 80vw;
+    height: 100vh;
+
+}
+
+code {
+    background: hsl(220, 80%, 90%);
+    padding: .1rem .2rem;
+    border-radius: .1rem;
+    font-size: 1.5rem;
+
+}
+
+.block {
+    padding: 1rem 2rem;
+    display: block;
+    white-space: pre-wrap;
+    margin: .5rem;
+
+}
+
+span.comment {
+    color: lightslategray;
+}
+
+
+
+p {
+    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
+}
+
+article {
+    border: red solid 1px;
+    width: 100%;
+    height: fit-content;
+}
