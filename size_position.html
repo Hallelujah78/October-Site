@@ -55,14 +55,38 @@ height: 100vh;  <span class="comment">// the div is 100% of the view height</spa
                 the right. The section has no height set, and so it will stretch to whatever height is required by the
                 div.</p>
         </div>
-        <article>
-            <p>This paragraph is inside an <code>article</code>, but it is not inside the <b>div</b> that has a width of
+        <article class="default">
+            <p class="percent">This paragraph is inside an <code>article</code>, but it is not inside the <b>div</b>
+                that has a width of
                 80vw. As a result, the article spans the entire width of the page.</p>
-            <p>The article has <code>font-size: 20rem</code> and this paragraph has a font size of 6%. 6% of 20 is 1.2,
+            <p class="percent">The article has <code>font-size: 20rem</code> and this paragraph has a font size of 6%.
+                6% of 20 is 1.2,
                 and so this paragraph has a font size of <b>1.2rem</b>.</p>
         </article>
+        <article class="half-vw">
+            <p>This paragraph is in an article with <code>width: 50vw</code></p>
+        </article>
+        <article class="inline-block">
+            <p>This paragraph is in an article with <code>display: inline-block</code>.</p>
+        </article>
+        <article class="inline">
+            <p>This paragraph is in an article with <code>display: inline</code>. Note that no border is displayed even
+                though we have <code>border: 1px solid green</code>. This is
+                because an inline element will only take up the space required by its content, and so there is no space
+                available for a border!</p>
+        </article>
+        <div>
+            <article id="hidden" class="inline-block">
+                <p><code>display: inline-block</code></p>
+            </article><button id="hidden-button">Toggle Hidden</button>
+        </div>
+        <div>
+            <article id="invisible" class="inline-block">
+                <p><code>display: inline-block</code></p>
+            </article><button id="invisible-button">Toggle Visible</button>
+        </div>
     </section>
-
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

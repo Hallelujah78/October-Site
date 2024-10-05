@@ -118,12 +118,37 @@ p {
 }
 
 article {
+    margin-bottom: 3px;
+}
+
+article.default {
     border: red solid 1px;
-    width: 100%;
-    height: fit-content;
     font-size: 20rem;
 }
 
-article p {
+article p.percent {
     font-size: 6%;
+}
+
+article.half-vw {
+    width: 50vw;
+    border: 1px solid blue;
+}
+
+article.inline-block {
+    display: inline-block;
+    border: 1px solid rgb(255, 0, 251);
+}
+
+article.inline {
+    display: inline;
+    border: 1px solid green;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
 }
