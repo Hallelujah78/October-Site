@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="fixed-nav">
         <div class="nav-center">
             <ul>
 
@@ -36,7 +36,15 @@
             </ul>
         </div>
     </nav>
-    <section>
+
+
+    <section class="section-fixed-nav">
+        <div>
+            <p>The nav above has <code>position: fixed</code> and <code>top: 0</code>. This means that it remains on the
+                screen even as the user scrolls downwards. We also set a background color for the nav. This ensures that
+                we can't see other content as it scrolls through the nav.</p>
+        </div>
+
         <div class="css-section-center">
             <p>This paragraph is inside a <code>div</code>. The <code>div</code> is inside a <code>section</code> which
                 in turn is nested inside the
@@ -54,7 +62,12 @@ height: 100vh;  <span class="comment">// the div is 100% of the view height</spa
                 height of 100vh, the total height of our page is 100vh + 5rem, and so we have a vertical scrollbar on
                 the right. The section has no height set, and so it will stretch to whatever height is required by the
                 div.</p>
+
+
+            <div class="sticky">This div has <code>position: sticky</code>. Note how it still scrolls off the screen
+                once its container scrolls off screen!</div>
         </div>
+
         <article class="default">
             <p class="percent">This paragraph is inside an <code>article</code>, but it is not inside the <b>div</b>
                 that has a width of
@@ -85,6 +98,7 @@ height: 100vh;  <span class="comment">// the div is 100% of the view height</spa
                 <p><code>display: inline-block</code></p>
             </article><button id="invisible-button">Toggle Visible</button>
         </div>
+
     </section>
     <script type="module" src="script.js"></script>
     <div>
@@ -104,6 +118,7 @@ height: 100vh;  <span class="comment">// the div is 100% of the view height</spa
                 use <code>top: 250vh</code> and <code>left: 50vw</code></p>
         </article>
     </div>
+
 </body>
 
 </html>

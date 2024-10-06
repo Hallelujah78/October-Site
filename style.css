@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 200vh;
+    position: relative;
+}
+
 a {
     text-decoration: none;
     color: rgb(46, 45, 45);
@@ -42,6 +47,12 @@ nav {
     margin: auto;
 }
 
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    /* background: rgb(255, 255, 222); */
+}
+
 
 
 #img1,
@@ -65,6 +76,10 @@ section {
     min-height: 100vh;
 }
 
+.section-fixed-nav {
+    margin-top: 5rem;
+}
+
 .img-container {
     width: 100%;
     display: grid;
@@ -86,7 +101,7 @@ section {
     border: green 1px solid;
     margin: auto;
     width: 80vw;
-    height: 100vh;
+    height: 150vh;
 
 }
 
@@ -181,4 +196,13 @@ article.inline {
     background-color: rgba(255, 81, 0, 0.7);
     top: 250vh;
     left: 50vw;
+}
+
+.sticky {
+    position: sticky;
+    width: 20vw;
+    height: 5rem;
+    right: 0;
+    top: 5rem;
+    background: rgb(202, 240, 146)
 }
